@@ -203,9 +203,9 @@ def quality_gate(
     roi_threshold=0.15,
     ridge_threshold=100
 ):
-    """
-    Run all quality check on the image.
-    """
+
+    #Run all quality check on the image.
+
     image = cv2.imread(image_path)
     if image is None:
         raise FileNotFoundError(f"Could not load image: {image_path}")
